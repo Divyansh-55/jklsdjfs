@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    padding:2% 8%;
+}
+a{
+    padding: 40px 20px 0 ;
+    color:wheat;
+    
+}
+a:visited{
+    color:wheat;
+}
+i{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex; 
+    justify-content: space-between;
+   
+}
+.nav-bar{
+   
+    color:white;
+    background-color: rgb(71, 38, 38); 
+    
+}
+.nav-bar img{
+    width:64px;
+}
+.nav-bar {
+    font-family: 'Libre Baskerville', serif;
+}
+.nav-bar h2{
+    padding:10px 0 0 20px;
+}
+
+/*---Big Box---*/
+.big-box{
+    min-height:80vh;
+    
+    background-color: rgb(18, 49, 84);
+    color: white;
+    margin:70px 180px 100px;
+    border-radius: 10px;
+    background-image: url("Images/Music.jpg");
+   background-repeat: no-repeat;
+   background-size: 85%;
+    
+}
+.songlist{
+    margin-top: 30px;
+}
+.eachsong{
+    width:65%;
+    height:50px;
+    margin-top:15px;
+    background-color: rgb(233, 101, 6);
+    border-radius: 10px;
+}
+.songitem img{
+    width:60px;
+    border-radius: 5px;
+    margin:5px;
+}
+.songtime{
+    display: flex;
+    margin-top: 15px;
+    padding-right: 10px;
+    gap:5px;
+}
+.song-desc{
+    padding-top:10px;
+}
+ 
+
+/*---Bottom*/
+
+.bottom{
+    position: fixed;
+    bottom:0vh;
+    width: 100vw;
+    background-color:  black; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column; 
+}
+#progressbar{
+   margin-top: 30px;
+    width:80%;
+    cursor: pointer;
+}
+.icons{
+    margin-bottom: 30px;
+}
+.icons i{
+    padding-top: 5px;
+    padding-right :10px;
+}
+#play{
+    width: 34px;
+}
+#next, #back{
+    width:24px;
+}
+
+.gif {
+    position: absolute;
+    left: 0;   
+   
+}
+.gif img{
+    width: 50px; 
+    border: 5px;
+    border-radius: 100px;
+    margin: 35px 0 0 100px;
+    opacity: 0;
+}
+
+
+@media screen and (max-width:1060px) {
+    .eachsong{
+        width:90%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:950px) {
+    .eachsong{
+        width:100%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    /* .big-box{
+        margin:30px 100px;
+    } */
+}
+@media screen and (max-width:840px) {
+    .eachsong{
+        width:90%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .big-box{
+        margin:30px 100px;
+    }
+}
+@media screen and (max-width:650px) {
+    .eachsong{
+        width:100%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .big-box{
+        margin:30px 50px;
+    }
+}@media screen and (max-width:550px) {
+    .eachsong{
+        width:100%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .big-box{
+        margin:30px 10px;
+    }
+}
